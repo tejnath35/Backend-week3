@@ -1,5 +1,5 @@
 import exp from 'express';
-import productmodel from '../Models/product-model.js';
+import productmodel from '../Models/Product-Model.js';
 
 export const productApp = exp.Router();
 
