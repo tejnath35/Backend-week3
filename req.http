@@ -1,0 +1,55 @@
+GET http://localhost:4000/userapi/users
+
+###
+POST http://localhost:4000/userapi/users
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "password": "password123",
+  "age": 25
+}
+
+###
+GET http://localhost:4000/userapi/users/698030f07521d51f26dc8f17
+
+###
+PUT http://localhost:4000/userapi/users/698030f07521d51f26dc8f17
+Content-Type: application/json
+
+{
+  "username": "updateduser",
+  "password": "newpassword456",
+  "age": 26
+}
+
+###
+DELETE http://localhost:4000/userapi/users/697dbcdd532b4490656914ba
+
+
+###
+POST http://localhost:4000/userapi/auth
+Content-Type: application/json
+
+{
+  "username":"newuser",
+  "password":"password123"
+}
+
+###
+GET http://localhost:4000/userapi/test
+
+###
+GET http://localhost:4000/productapi/products
+
+###
+POST http://localhost:4000/productapi/products
+Content-Type: application/json
+
+{
+  "productname": "laptop",
+  "price": 75000
+}
+
+###
+GET http://localhost:4000/productapi/products/69802f9c50e527cf858c7895
