@@ -2,7 +2,7 @@ import exp from 'express';
 import usermodel from '../Models/User-Model.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { verifyToken } from "../middlewares/verifyToken.js";
+import { verifyToken } from '../Middlewares/verifyToken.js';
 
 
 export const userApp = exp.Router();
@@ -108,4 +108,3 @@ userApp.post('/auth', async (req, res) => {
 userApp.get("/test", verifyToken, (req, res) => {
   res.json({ message: "Test route working ✅" });
 });
-

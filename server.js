@@ -1,6 +1,6 @@
 import exp from 'express';
 import { userApp } from './APIS/User-Api.js';
-import { productApp } from './APIS/product-api.js';
+import { productApp } from './APIS/Product-Api.js';
 import {connect} from  'mongoose';
 import cookieParser from 'cookie-parser';
 const app=exp();
@@ -17,7 +17,7 @@ async function connection(){
 }
 connection();
 app.use(exp.json());
+app.use(cookieParser())
 app.use('/userapi',userApp);
 app.use('/productapi',productApp);
-app.use(cookieParser())
 
