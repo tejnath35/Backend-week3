@@ -17,7 +17,7 @@ This is a simple e-commerce backend built with Node.js, Express, and MongoDB. It
 - `Readme` - Project documentation
 
 
-# 📦 Installed Packages
+# Installed Packages
 
 ## e-commerce
 
